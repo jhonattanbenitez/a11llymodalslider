@@ -1,0 +1,30 @@
+.c-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-x: scroll;
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 0 1rem;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  &__img {
+    width: 80%;
+    max-width: 200px;
+    border-radius: 50%;
+  }
+  &__name {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
