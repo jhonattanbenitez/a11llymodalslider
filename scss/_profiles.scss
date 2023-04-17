@@ -1,13 +1,36 @@
 .c-profile {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px;
+  
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
   &__card {
     border: 1px solid black;
     padding: 20px;
     text-align: center;
-    p{
-        font-size: 60px;
+    p {
+      font-size: 60px;
     }
+  }
+  &__wrapper {
+    max-height: 70%;
+    padding: 1rem;
+    overflow: auto;
+    background: #fff;
+  }
+  &__img {
+    width: 80%;
+    max-width: 200px;
+    border-radius: 5%;
+  }
+  &__name {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
   }
 }
